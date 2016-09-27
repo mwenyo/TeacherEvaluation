@@ -39,8 +39,12 @@
     <Compile Include="administradores\__init__.py" />
     <Compile Include="categorias\admin.py" />
     <Compile Include="categorias\apps.py" />
+    <Compile Include="categorias\forms.py" />
     <Compile Include="categorias\migrations\__init__.py" />
     <Compile Include="categorias\models.py" />
+    <Compile Include="categorias\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="categorias\tests.py" />
     <Compile Include="categorias\views.py" />
     <Compile Include="categorias\__init__.py" />
