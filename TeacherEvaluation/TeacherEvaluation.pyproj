@@ -37,6 +37,13 @@
     <Compile Include="administradores\urls.py" />
     <Compile Include="administradores\views.py" />
     <Compile Include="administradores\__init__.py" />
+    <Compile Include="categorias\admin.py" />
+    <Compile Include="categorias\apps.py" />
+    <Compile Include="categorias\migrations\__init__.py" />
+    <Compile Include="categorias\models.py" />
+    <Compile Include="categorias\tests.py" />
+    <Compile Include="categorias\views.py" />
+    <Compile Include="categorias\__init__.py" />
     <Compile Include="coordenadores\admin.py" />
     <Compile Include="coordenadores\apps.py" />
     <Compile Include="coordenadores\migrations\__init__.py" />
@@ -87,6 +94,15 @@
     <Compile Include="modalidades\urls.py" />
     <Compile Include="modalidades\views.py" />
     <Compile Include="modalidades\__init__.py" />
+    <Compile Include="perguntas\admin.py" />
+    <Compile Include="perguntas\apps.py" />
+    <Compile Include="perguntas\forms.py" />
+    <Compile Include="perguntas\migrations\__init__.py" />
+    <Compile Include="perguntas\models.py" />
+    <Compile Include="perguntas\tests.py" />
+    <Compile Include="perguntas\urls.py" />
+    <Compile Include="perguntas\views.py" />
+    <Compile Include="perguntas\__init__.py" />
     <Compile Include="periodos_letivos\admin.py" />
     <Compile Include="periodos_letivos\apps.py" />
     <Compile Include="periodos_letivos\migrations\__init__.py" />
@@ -133,6 +149,8 @@
     <Compile Include="turmas\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="categorias\templates\index.html" />
+    <Content Include="perguntas\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="static\css\bootstrap.min.css" />
     <Content Include="static\css\font-awesome.min.css" />
@@ -711,6 +729,9 @@
   <ItemGroup>
     <Folder Include="administradores\" />
     <Folder Include="administradores\migrations\" />
+    <Folder Include="categorias\" />
+    <Folder Include="categorias\migrations\" />
+    <Folder Include="categorias\templates\" />
     <Folder Include="coordenadores\" />
     <Folder Include="coordenadores\migrations\" />
     <Folder Include="cursos\" />
@@ -723,6 +744,9 @@
     <Folder Include="grades_curriculares\migrations\" />
     <Folder Include="modalidades\" />
     <Folder Include="modalidades\migrations\" />
+    <Folder Include="perguntas\" />
+    <Folder Include="perguntas\migrations\" />
+    <Folder Include="perguntas\templates\" />
     <Folder Include="periodos_letivos\" />
     <Folder Include="periodos_letivos\migrations\" />
     <Folder Include="professores\" />

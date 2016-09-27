@@ -1,0 +1,57 @@
+{% extends 'tes/index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<section id="widget-grid">
+    <!-- row -->
+    <div class="row">
+        <!-- SINGLE GRID -->
+        <article class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+
+            <div class="jarviswidget" id="wid-id-0">
+
+                <header>
+                    <h2>Selecione uma Pergunta</h2>
+                </header><!-- widget div-->
+
+                <div>
+                    <div class="widget-body">
+                        <form id="checkout-form" class="smart-form" method="post" action="{% url 'pergunta' objeto.id %}">
+                            {% csrf_token %}
+                            <fieldset>
+                                <div class="row">
+                                    <section class="col col-6">
+                                        {{ form.cabecalho.help_text }}
+                                        <label class="input {% if form.errors %}state-error{% endif %}" for="{{ form.cabecalho.id_for_label }}">
+                                            <i class="icon-prepend fa fa-check"></i>
+                                            {{ form.cabecalho }}
+                                        </label>
+                                        {% for error in form.nome.errors %}
+                                        <div id="{{ form.cabecalho.id_for_label }}-error" class="note note-error" for="{{ form.cabecalho.id_for_label}}">{{ error }}</div>
+                                        {% endfor %}
+                                    </section>
+                                </div>
+                            </fieldset>
+                            <footer>
+                                <button type="submit" class="btn btn-primary">
+                                    Salvar
+                                </button>
+                            </footer>
+                        </form>
+
+                    </div><!-- end widget content -->
+                </div><!-- end widget div -->
+            </div><!-- end widget -->
+        </article><!-- GRID END -->
+    </div><!-- end row -->
+</section>
+{% endblock content %}
+
+{% block plugins %}
+<script src="{% static 'js/plugin/jquery-form/jquery-form.min.js' %}"></script>
+{% endblock plugins %}
+{% block javascript %}
+<script>
+    $('#id_cabecalho').focus();
+</script>
+{% endblock javascript%}

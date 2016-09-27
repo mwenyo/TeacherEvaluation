@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'professores',
     'salas',
     'turmas',
+    'perguntas',
 ]
 
 MIDDLEWARE_CLASSES = [
