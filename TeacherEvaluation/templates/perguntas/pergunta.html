@@ -26,8 +26,18 @@
                                             <i class="icon-prepend fa fa-check"></i>
                                             {{ form.cabecalho }}
                                         </label>
-                                        {% for error in form.nome.errors %}
+                                        {% for error in form.cabecalho.errors %}
                                         <div id="{{ form.cabecalho.id_for_label }}-error" class="note note-error" for="{{ form.cabecalho.id_for_label}}">{{ error }}</div>
+                                        {% endfor %}
+                                    </section>
+                                    <section class="col col-6">
+                                        {{ form.categoria.help_text }}
+                                        <label class="select {% if form.errors %}state-error{% endif %}" for="{{ form.categoria.id_for_label }}">
+                                            {{ form.categoria }}
+                                            <i></i>
+                                        </label>
+                                        {% for error in form.categoria.errors %}
+                                        <div id="{{ form.categoria.id_for_label }}-error" class="note note-error" for="{{ form.categoria.id_for_label}}">{{ error }}</div>
                                         {% endfor %}
                                     </section>
                                 </div>

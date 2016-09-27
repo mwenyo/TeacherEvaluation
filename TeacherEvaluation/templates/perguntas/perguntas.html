@@ -22,6 +22,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Cabe&ccedil;alho</th>
+                                <th>Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -31,6 +32,11 @@
                                 <td>
                                     <a href="{{ pergunta.get_absolute_url }}" class="btn btn-info">
                                         {{ pergunta.cabecalho }}
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="{{ pergunta.categoria.get_absolute_url }}" class="btn btn-info">
+                                        {{ pergunta.categoria }}
                                     </a>
                                 </td>
                             </tr>

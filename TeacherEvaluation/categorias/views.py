@@ -18,9 +18,8 @@ def categoria(request, id):
     objeto = get_object_or_404(Categoria, pk=id)
     if request.method == "GET":
         form = CategoriaForm(instance=objeto)
-        perguntas_relacionadas = Pergunta.objects.all() #filter(categoria_id=id)
+        perguntas_relacionadas = Pergunta.objects.filter(categoria_id=id)
         return render(request, 'categorias/categoria.html', {'objeto': objeto, 'perguntas_relacionadas': perguntas_relacionadas, 'form':form, 'user': User})
-        #return render(request, 'categorias/categoria.html', {'objeto': objeto, 'form':form, 'user': User})
     else:
         form = CategoriaForm(request.POST, instance=objeto)
         if form.is_valid():

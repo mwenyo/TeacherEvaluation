@@ -4,7 +4,7 @@ from perguntas.models import Pergunta
 class PerguntaForm(forms.ModelForm):
     class Meta:
         model = Pergunta
-        fields = ('cabecalho',)
+        fields = ('cabecalho','categoria')
         widgets = {
             'cabecalho': forms.TextInput(attrs={'class': 'form-control'}),
         }
