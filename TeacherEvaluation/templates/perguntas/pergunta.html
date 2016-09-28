@@ -23,7 +23,7 @@
                                     <section class="col col-6">
                                         {{ form.cabecalho.help_text }}
                                         <label class="label">Cabe&ccedil;alho</label>
-                                        <label class="input {% if form.errors %}state-error{% endif %}" rel="tooltip" data-placement="top" data-original-title="Cabe&ccedil;alho" for="{{ form.cabecalho.id_for_label }}">
+                                        <label class="textarea {% if form.errors %}state-error{% endif %}" for="{{ form.cabecalho.id_for_label }}">
                                             <i class="icon-prepend fa fa-check"></i>
                                             {{ form.cabecalho }}
                                         </label>

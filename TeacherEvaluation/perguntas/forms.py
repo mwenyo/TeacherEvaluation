@@ -6,5 +6,5 @@ class PerguntaForm(forms.ModelForm):
         model = Pergunta
         fields = ('cabecalho','categoria')
         widgets = {
-            'cabecalho': forms.TextInput(attrs={'class': 'form-control'}),
+            'cabecalho': forms.Textarea(attrs={'rows':'3'}), #'class': 'form-control'}),
         }
