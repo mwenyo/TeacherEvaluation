@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'turmas',
     'categorias',
     'perguntas',
+	'questionarios',
+	#'questionarios_respondidos',
 ]
 
 MIDDLEWARE_CLASSES = [
