@@ -23,7 +23,8 @@ class Migration(migrations.Migration):
                 ('pergunta', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='perguntas.Pergunta')),
             ],
         ),
-        migrations.AlterField(
+		
+        migrations.AddField(
             model_name='questionario',
             name='pergunta',
             field=models.ManyToManyField(through='questionarios.Questionario_Pergunta', to='perguntas.Pergunta'),

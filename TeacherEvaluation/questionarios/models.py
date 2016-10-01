@@ -8,7 +8,7 @@ class Questionario(models.Model):
 	
 	administrador = models.ForeignKey(Administrador)
 	data = models.DateTimeField()
-	pergunta = models.ManyToManyField(Pergunta, through='Questionario_Pergunta')
+	perguntas = models.ManyToManyField(Pergunta, through='Questionario_Pergunta')
 	
 class Questionario_Pergunta(models.Model):
 	questionario = models.ForeignKey(Questionario, on_delete=models.CASCADE)
