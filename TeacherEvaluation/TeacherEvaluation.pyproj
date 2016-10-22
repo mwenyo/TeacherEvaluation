@@ -131,13 +131,6 @@
     <Compile Include="questionarios\urls.py" />
     <Compile Include="questionarios\views.py" />
     <Compile Include="questionarios\__init__.py" />
-    <Compile Include="questionarios_respondidos\admin.py" />
-    <Compile Include="questionarios_respondidos\apps.py" />
-    <Compile Include="questionarios_respondidos\migrations\__init__.py" />
-    <Compile Include="questionarios_respondidos\models.py" />
-    <Compile Include="questionarios_respondidos\tests.py" />
-    <Compile Include="questionarios_respondidos\views.py" />
-    <Compile Include="questionarios_respondidos\__init__.py" />
     <Compile Include="salas\admin.py" />
     <Compile Include="salas\apps.py" />
     <Compile Include="salas\forms.py">
@@ -773,8 +766,6 @@
     <Folder Include="professores\migrations\" />
     <Folder Include="questionarios\" />
     <Folder Include="questionarios\migrations\" />
-    <Folder Include="questionarios_respondidos\" />
-    <Folder Include="questionarios_respondidos\migrations\" />
     <Folder Include="salas\" />
     <Folder Include="salas\migrations\" />
     <Folder Include="static\" />
